@@ -65,6 +65,7 @@ public class UserController {
 			{
 				userService.blockuser(username, password);
 				ram="Sorry!!! Your Account is Blocked...Please Contact Administrator!!!";
+				incorrect_login=0;
 			}
 			model.addAttribute("hari", ram);
 			return "Invalid-username-pass";
